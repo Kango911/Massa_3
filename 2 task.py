@@ -23,6 +23,7 @@ class LinkedList:
                 current = current.next
             current.next = new_node
 
+    # Kango911
     def remove_first_less_than(self, value):
         if self.is_empty():
             return
@@ -39,6 +40,7 @@ class LinkedList:
                 return
             current = current.next
 
+    # Kango911
     def insert_after_digits(self):
         if self.is_empty():
             return
@@ -59,7 +61,7 @@ class LinkedList:
             current = current.next
         print("None")
 
-
+#Kango911
 # Создание списка и добавление элементов
 linked_list = LinkedList()
 characters = ['a', '1', 'b', 'c', '5', 'd', 'e', '2']

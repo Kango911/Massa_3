@@ -6,7 +6,7 @@ class Node:
 
 
 # Определение класса однонаправленного списка
-class LinkedList:
+class LinkedList:#Kango911
     def __init__(self):
         self.head = None
 
@@ -27,7 +27,7 @@ class LinkedList:
         new_node = Node(new_data)
         if self.is_empty():
             return
-
+        # Kango911
         # Если значение, перед которым нужно вставить новый элемент, находится в начале списка
         if self.head.data == value:
             new_node.next = self.head
@@ -45,7 +45,7 @@ class LinkedList:
     def display(self):
         current = self.head
         while current:
-            print(current.data, end=" -> ")
+            print(current.data, end=" -> ")#Kango911
             current = current.next
         print("None")
 
@@ -60,7 +60,7 @@ for number in numbers:
 # Вывод исходного списка
 print("Исходный список:")
 linked_list.display()
-
+#Kango911
 # Вставка числа 0.99 перед каждым элементом со значением 55
 current = linked_list.head
 while current:
@@ -68,7 +68,7 @@ while current:
         linked_list.insert_before_value(55, 0.99)
         current = current.next  # Пропускаем вставленный элемент, чтобы не вставлять перед ним снова
     current = current.next
-
+#Kango911
 # Вывод списка после вставок
 print("\nСписок после вставок:")
 linked_list.display()

@@ -31,6 +31,7 @@ class DoublyLinkedList:
             current = current.next
         print("None")
 
+    # Kango911
     def move_elements_between(self, px, py):
         if px is None or py is None:
             return None
@@ -65,7 +66,7 @@ class DoublyLinkedList:
 # Создание и заполнение двусвязного списка
 doubly_linked_list = DoublyLinkedList()
 elements = [10, 20, 30, 40, 50, 60, 70, 80, 90]
-
+#Kango911
 for elem in elements:
     doubly_linked_list.insert_at_end(elem)
 
